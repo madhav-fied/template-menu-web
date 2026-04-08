@@ -1,0 +1,202 @@
+cafe:
+  name: "The Corner Brew"
+
+notices:
+  - name: Flat 20% off on All Day Breakfast before 12 PM
+  - name: Live acoustic night every Friday with Varun
+  - name: Try our new Truffle Fries — chef's special
+
+filter_chips:
+  - name: veg
+  - name: egg
+  - name: non-veg
+  - name: spicy
+  - name: must-try
+
+filter_categories:
+  - name: all day breakfast
+  - name: mains
+  - name: quick bites
+  - name: desserts
+  - name: drinks
+
+items:
+  # --- All Day Breakfast ---
+  - name: Classic Pancakes
+    price: 180
+    category: all day breakfast
+    chips:
+      - veg
+      - must-try
+
+  - name: French Toast
+    price: 200
+    category: all day breakfast
+    chips:
+      - egg
+
+  - name: Eggs Benedict
+    price: 280
+    category: all day breakfast
+    chips:
+      - egg
+      - must-try
+
+  - name: Masala Omelette
+    price: 160
+    category: all day breakfast
+    chips:
+      - egg
+      - spicy
+
+  - name: Avocado Toast
+    price: 250
+    category: all day breakfast
+    chips:
+      - veg
+
+  # --- Mains ---
+  - name: Margherita Pizza
+    price: 350
+    category: mains
+    chips:
+      - veg
+
+  - name: Butter Chicken Bowl
+    price: 380
+    category: mains
+    chips:
+      - non-veg
+      - spicy
+      - must-try
+
+  - name: Grilled Chicken Sandwich
+    price: 320
+    category: mains
+    chips:
+      - non-veg
+
+  - name: Paneer Tikka Wrap
+    price: 280
+    category: mains
+    chips:
+      - veg
+      - spicy
+
+  - name: Pesto Pasta
+    price: 300
+    category: mains
+    chips:
+      - veg
+
+  - name: Fish & Chips
+    price: 400
+    category: mains
+    chips:
+      - non-veg
+      - must-try
+
+  # --- Quick Bites ---
+  - name: Truffle Fries
+    price: 220
+    category: quick bites
+    chips:
+      - veg
+      - must-try
+
+  - name: Chicken Wings
+    price: 300
+    category: quick bites
+    chips:
+      - non-veg
+      - spicy
+
+  - name: Bruschetta
+    price: 200
+    category: quick bites
+    chips:
+      - veg
+
+  - name: Loaded Nachos
+    price: 250
+    category: quick bites
+    chips:
+      - veg
+      - spicy
+
+  - name: Spring Rolls
+    price: 180
+    category: quick bites
+    chips:
+      - veg
+
+  # --- Desserts ---
+  - name: Tiramisu
+    price: 280
+    category: desserts
+    chips:
+      - egg
+      - must-try
+
+  - name: Chocolate Lava Cake
+    price: 250
+    category: desserts
+    chips:
+      - egg
+
+  - name: Mango Cheesecake
+    price: 300
+    category: desserts
+    chips:
+      - veg
+      - must-try
+
+  - name: Gulab Jamun
+    price: 120
+    category: desserts
+    chips:
+      - veg
+
+  - name: Ice Cream Sundae
+    price: 180
+    category: desserts
+    chips:
+      - veg
+
+  # --- Drinks ---
+  - name: Cold Brew Coffee
+    price: 180
+    category: drinks
+    chips:
+      - veg
+      - must-try
+
+  - name: Masala Chai
+    price: 80
+    category: drinks
+    chips:
+      - veg
+
+  - name: Mango Smoothie
+    price: 200
+    category: drinks
+    chips:
+      - veg
+
+  - name: Iced Matcha Latte
+    price: 220
+    category: drinks
+    chips:
+      - veg
+
+  - name: Fresh Lime Soda
+    price: 100
+    category: drinks
+    chips:
+      - veg
+
+  - name: Espresso
+    price: 120
+    category: drinks
+    chips:
+      - veg
