@@ -1,19 +1,51 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --color-cream: #fdf6ec;
+  --color-cream-dark: #f5e9d3;
+  --color-espresso: #2c1a0e;
+  --color-espresso-mid: #4a2e1a;
+  --color-gold: #b8860b;
+  --color-gold-light: #d4a843;
+  --color-warm-gray: #8c7b6b;
+  --color-divider: #e0cdb8;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-cream);
+  color: var(--color-espresso);
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Chip badge styles */
+.chip-veg      { background: #dcfce7; color: #166534; border: 1px solid #86efac; }
+.chip-egg      { background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; }
+.chip-non-veg  { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
+.chip-spicy    { background: #ffedd5; color: #9a3412; border: 1px solid #fdba74; }
+.chip-must-try { background: #f3e8ff; color: #6b21a8; border: 1px solid #d8b4fe; }
+
+/* Hide scrollbar while keeping scroll functionality */
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Category section divider with flanking lines */
+.category-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+.category-divider::before,
+.category-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--color-divider);
 }

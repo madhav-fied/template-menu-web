@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import type React from "react";
 import { getMenuConfig } from "@/lib/config";
+import { generateTheme } from "@/lib/theme";
 import "./globals.css";
 import Header from "./components/Header";
 import NoticesCarousel from "./components/Notice";
-import FilterBar from "./components/Filters";
-import ItemLayout from "./components/ItemLayout";
+import MenuView from "./components/MenuView";
 
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -21,15 +22,26 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const config = getMenuConfig();
+
+  const themeVars = generateTheme(
+    config.cafe.theme?.color1 ?? "#fdf6ec",
+    config.cafe.theme?.color2 ?? "#2c1a0e",
+    config.cafe.theme?.color3,
+  );
+
   return (
-    <html
-      lang="en"
-    >
-      <body className="min-h-full flex flex-col">
-        <Header cafeName={config.cafe.name} />
+    <html lang="en">
+      <body
+        className="min-h-screen flex flex-col bg-cream text-espresso"
+        style={themeVars as unknown as React.CSSProperties}
+      >
+        <Header cafeName={config.cafe.name} heroImage={config.cafe.hero_image} />
         <NoticesCarousel notices={config.notices} />
-        <FilterBar filter_categories={config.filter_categories} filter_chips={config.filter_chips} />
-        <ItemLayout items={config.items} />
+        <MenuView
+          items={config.items}
+          filterCategories={config.filter_categories}
+          filterChips={config.filter_chips}
+        />
         {children}
       </body>
     </html>
