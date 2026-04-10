@@ -11,8 +11,8 @@ export default function ItemLayout({ items }: ItemLayoutProps) {
             {
                 items.map((item, idx) => {
                     return (
-                        <div>
-                            <Item key={idx.toString()} {...item} />
+                        <div key={idx.toString()}>
+                            <Item {...item} />
                             <hr />
                         </div>
                     )

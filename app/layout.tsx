@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getMenuConfig } from "@/lib/config";
 import "./globals.css";
 import Header from "./components/Header";
-import Notices from "./components/Notice";
+import NoticesCarousel from "./components/Notice";
 import FilterBar from "./components/Filters";
 import ItemLayout from "./components/ItemLayout";
 
@@ -27,7 +27,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <Header cafeName={config.cafe.name} />
-        <Notices notices={config.notices} />
+        <NoticesCarousel notices={config.notices} />
         <FilterBar filter_categories={config.filter_categories} filter_chips={config.filter_chips} />
         <ItemLayout items={config.items} />
         {children}

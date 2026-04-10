@@ -13,16 +13,7 @@ interface FilterBarProps {
 
 export default function FilterBar({ filter_categories, filter_chips }: FilterBarProps) {
     return (
-        <div>
-            <div>
-                {
-                    filter_chips.map((chip) => {
-                        return (
-                            <div key={chip.name}>{chip.name}</div>
-                        )
-                    })
-                }
-            </div>
+        <div className="flex flex-row border border-white border-solid h-[4dvh]">
             <div>
                 <select name="category" id="categories">
                     {
@@ -33,6 +24,15 @@ export default function FilterBar({ filter_categories, filter_chips }: FilterBar
                         })
                     }
                 </select>
+            </div>
+            <div className="flex flex-row gap-1">
+                {
+                    filter_chips.map((chip) => {
+                        return (
+                            <div key={chip.name}>{chip.name}</div>
+                        )
+                    })
+                }
             </div>
         </div>
     );
