@@ -1,10 +1,18 @@
 cafe:
   name: "The Corner Brew"
+  hero_image: /images/cafe-hero.jpg
+  theme:
+    color1: "#fdf6ec"   # light / background
+    color2: "#2c1a0e"   # dark  / foreground
+    color3: "#b8860b"   # accent (optional — remove this line to auto-derive)
 
 notices:
   - name: Flat 20% off on All Day Breakfast before 12 PM
+    image: /images/concert.jpg
   - name: Live acoustic night every Friday with Varun
+    image: /images/concert.jpg
   - name: Try our new Truffle Fries — chef's special
+    image: /images/concert.jpg
 
 filter_chips:
   - name: veg
@@ -25,6 +33,7 @@ items:
   - name: Classic Pancakes
     price: 180
     category: all day breakfast
+    image: /images/menu/food1.jpg
     chips:
       - veg
       - must-try
@@ -32,12 +41,14 @@ items:
   - name: French Toast
     price: 200
     category: all day breakfast
+    image: /images/menu/food2-long.jpg
     chips:
       - egg
 
   - name: Eggs Benedict
     price: 280
     category: all day breakfast
+    image: /images/menu/food-longest.jpg
     chips:
       - egg
       - must-try
@@ -45,6 +56,7 @@ items:
   - name: Masala Omelette
     price: 160
     category: all day breakfast
+    image: /images/menu/food1.jpg
     chips:
       - egg
       - spicy
@@ -52,6 +64,7 @@ items:
   - name: Avocado Toast
     price: 250
     category: all day breakfast
+    image: /images/menu/food2-long.jpg
     chips:
       - veg
 
@@ -59,12 +72,14 @@ items:
   - name: Margherita Pizza
     price: 350
     category: mains
+    image: /images/menu/food-longest.jpg
     chips:
       - veg
 
   - name: Butter Chicken Bowl
     price: 380
     category: mains
+    image: /images/menu/food1.jpg
     chips:
       - non-veg
       - spicy
@@ -73,12 +88,14 @@ items:
   - name: Grilled Chicken Sandwich
     price: 320
     category: mains
+    image: /images/menu/food2-long.jpg
     chips:
       - non-veg
 
   - name: Paneer Tikka Wrap
     price: 280
     category: mains
+    image: /images/menu/food-longest.jpg
     chips:
       - veg
       - spicy
@@ -86,12 +103,14 @@ items:
   - name: Pesto Pasta
     price: 300
     category: mains
+    image: /images/menu/food1.jpg
     chips:
       - veg
 
   - name: Fish & Chips
     price: 400
     category: mains
+    image: /images/menu/food2-long.jpg
     chips:
       - non-veg
       - must-try
@@ -100,6 +119,7 @@ items:
   - name: Truffle Fries
     price: 220
     category: quick bites
+    image: /images/menu/food-longest.jpg
     chips:
       - veg
       - must-try
@@ -107,6 +127,7 @@ items:
   - name: Chicken Wings
     price: 300
     category: quick bites
+    image: /images/menu/food1.jpg
     chips:
       - non-veg
       - spicy
@@ -114,12 +135,14 @@ items:
   - name: Bruschetta
     price: 200
     category: quick bites
+    image: /images/menu/food2-long.jpg
     chips:
       - veg
 
   - name: Loaded Nachos
     price: 250
     category: quick bites
+    image: /images/menu/food-longest.jpg
     chips:
       - veg
       - spicy
@@ -127,6 +150,7 @@ items:
   - name: Spring Rolls
     price: 180
     category: quick bites
+    image: /images/menu/food1.jpg
     chips:
       - veg
 
@@ -134,6 +158,7 @@ items:
   - name: Tiramisu
     price: 280
     category: desserts
+    image: /images/menu/food2-long.jpg
     chips:
       - egg
       - must-try
@@ -141,12 +166,14 @@ items:
   - name: Chocolate Lava Cake
     price: 250
     category: desserts
+    image: /images/menu/food-longest.jpg
     chips:
       - egg
 
   - name: Mango Cheesecake
     price: 300
     category: desserts
+    image: /images/menu/food1.jpg
     chips:
       - veg
       - must-try
@@ -154,12 +181,14 @@ items:
   - name: Gulab Jamun
     price: 120
     category: desserts
+    image: /images/menu/food2-long.jpg
     chips:
       - veg
 
   - name: Ice Cream Sundae
     price: 180
     category: desserts
+    image: /images/menu/food-longest.jpg
     chips:
       - veg
 
@@ -167,6 +196,7 @@ items:
   - name: Cold Brew Coffee
     price: 180
     category: drinks
+    image: /images/menu/food1.jpg
     chips:
       - veg
       - must-try
@@ -174,29 +204,34 @@ items:
   - name: Masala Chai
     price: 80
     category: drinks
+    image: /images/menu/food2-long.jpg
     chips:
       - veg
 
   - name: Mango Smoothie
     price: 200
     category: drinks
+    image: /images/menu/food-longest.jpg
     chips:
       - veg
 
   - name: Iced Matcha Latte
     price: 220
     category: drinks
+    image: /images/menu/food1.jpg
     chips:
       - veg
 
   - name: Fresh Lime Soda
     price: 100
     category: drinks
+    image: /images/menu/food2-long.jpg
     chips:
       - veg
 
   - name: Espresso
     price: 120
     category: drinks
+    image: /images/menu/food-longest.jpg
     chips:
       - veg
